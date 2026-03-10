@@ -1,57 +1,94 @@
 <template>
-  <section id="about" class="py-5">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <h2 class="display-6 fw-bold">À propos</h2>
-          <div class="border-bottom border-success border-3 w-25 mt-2 mb-4"></div>
-          <div class="d-flex flex-column gap-3">
-            <div>
-              <p class="text-muted mb-1 small">Email</p>
-              <a :href="`mailto:${profile.email}`" class="text-decoration-none">{{ profile.email }}</a>
-            </div>
-            <div>
-              <p class="text-muted mb-1 small">LinkedIn</p>
-              <a :href="profile.linkedin" target="_blank" class="text-decoration-none">Voir le profil</a>
-            </div>
-            <div>
-              <p class="text-muted mb-1 small">GitHub</p>
-              <a :href="profile.github" target="_blank" class="text-decoration-none">Voir les repos</a>
-            </div>
-            <div>
-              <p class="text-muted mb-1 small">Disponibilité</p>
-              <span class="badge bg-success">Disponible pour missions</span>
-            </div>
-          </div>
-        </div>
+<section id="about" class="py-24 bg-gradient-to-b from-black via-violet-900 to-violet-800">
 
-        <div class="col-lg-8">
-          <p class="lead" style="white-space: pre-line;">{{ profile.about }}</p>
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-          <div class="row mt-4 g-3 text-center">
-            <div class="col-4">
-              <div class="border rounded p-3">
-                <p class="display-6 fw-bold text-success mb-0">5+</p>
-                <p class="text-muted small mb-0">Années d'expérience</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="border rounded p-3">
-                <p class="display-6 fw-bold text-success mb-0">20+</p>
-                <p class="text-muted small mb-0">Projets livrés</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="border rounded p-3">
-                <p class="display-6 fw-bold text-success mb-0">12+</p>
-                <p class="text-muted small mb-0">Clients satisfaits</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Colonne gauche -->
+  <div>
+
+    <h2 class="text-4xl font-bold text-white">
+      À propos
+    </h2>
+
+    <div class="w-20 h-1 bg-violet-500 mt-3 mb-8"></div>
+
+    <div class="space-y-6 text-gray-300">
+
+      <div>
+        <p class="text-sm text-gray-400">Email</p>
+        <a :href="`mailto:${profile.email}`" class="hover:text-violet-400 transition">
+          {{ profile.email }}
+        </a>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-400">LinkedIn</p>
+        <a :href="profile.linkedin" target="_blank" class="hover:text-violet-400 transition">
+          Voir le profil
+        </a>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-400">GitHub</p>
+        <a :href="profile.github" target="_blank" class="hover:text-violet-400 transition">
+          Voir les repos
+        </a>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-400">Disponibilité</p>
+
+        <span class="inline-block mt-1 px-3 py-1 text-sm rounded-full bg-green-500/20 text-green-400">
+          Disponible pour missions
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Colonne droite -->
+  <div>
+
+    <p class="text-lg text-gray-300 leading-relaxed whitespace-pre-line">
+      {{ profile.about }}
+    </p>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-6 mt-10 text-center">
+
+      <div class="bg-black/40 border border-green-500/30 rounded-xl p-6">
+
+        <p class="text-4xl font-bold text-green-400">
+          3+
+        </p>
+
+        <p class="text-sm text-gray-400 mt-1">
+          Années d'expérience
+        </p>
+
+      </div>
+
+      <div class="bg-black/40 border border-green-500/30 rounded-xl p-6">
+
+        <p class="text-4xl font-bold text-green-400">
+          5+
+        </p>
+
+        <p class="text-sm text-gray-400 mt-1">
+          Projets livrés
+        </p>
+
       </div>
     </div>
-  </section>
+
+  </div>
+
+</div>
+
+</section>
 </template>
 
 <script setup>

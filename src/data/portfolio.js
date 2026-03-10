@@ -1,12 +1,12 @@
 export const profile = {
   name: "Samuel LALANNE",
-  title: "Développeur Fullstack",
-  tagline: "Je conçois des applications web robustes, de la base de données à l'interface utilisateur.",
-  about: ``,
-  stack: ["Vue.js", "Node.js", "", "", "", "REST API", "Git"],
+  title: "Développeur Full Stack",
+  tagline: "Étudiant en BTS SIO passionné par le développement web. Spécialisé en Vue.js, React et Node.js avec une expérience en API REST sécurisées et bases de données.",
+  about: `Développeur Full Stack de 21 ans en BTS SIO. Déterminé et passionné, je m'épanouis en relevant les défis technologiques du web. Maîtrise du frontend (Vue.js, React, Tailwind) et backend (Node.js, Express, MongoDB). Compétences en sécurité web, authentification JWT et développement agile.`,
+  stack: ["Vue.js", "React", "Node.js", "JavaScript", "TypeScript", "Tailwind CSS", "MongoDB", "MySQL", "Express", "API REST", "Git", "AWS"],
   email: "samuel.lalanne.sl@gmail.com",
-  linkedin: "https://linkedin.com/in/",
-  github: "https://github.com/",
+  linkedin: "https://www.linkedin.com/in/samuel-lalanne-9096a1259/",
+  github: "https://github.com/SamSweYYY",
   available: true,
 }
 
@@ -60,92 +60,93 @@ export const profile = {
  export const projects = [
   {
     id: 1,
-    title: "Plateforme SaaS de gestion RH",
-    period: "2024 — 6 mois",
-    client: "Startup B2B (série A, 40 employés)",
+    title: "Plateforme de gestion des chauffeurs VTC",
+    period: "10/2024 — 12/2024",
+    client: "SOS SECRET R - Contrat d'apprentissage",
     context:
-      "L'équipe RH gérait les congés, fiches de paie et entretiens dans 3 outils différents. Le besoin : une plateforme unique, simple et rapide à adopter.",
-    role: "Lead développeur fullstack — conception de l'architecture API, développement du back Node.js/PostgreSQL, intégration front Vue.js.",
-    stack: ["Vue.js 3", "Node.js", "Express", "PostgreSQL", "Docker", "JWT"],
+      "Création d'une application web complète dédiée à la gestion des chauffeurs VTC avec localisation en temps réel, système d'authentification sécurisé et CRUD complet.",
+    role: "Développeur Full Stack — conception de l'interface utilisateur avec React, développement de l'API REST sécurisée (Node.js, Express), intégration Google Maps, implémentation JWT/bcrypt.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Google Maps API", "JWT", "bcrypt"],
     challenges:
-      "Gestion des droits multi-rôles complexes (admin, manager, employé) et synchronisation temps réel des plannings.",
+      "Intégration de Google Maps pour afficher la position et disponibilité en temps réel, sécurisation avec JWT et bcrypt, gestion de mise à jour simultanée.",
     results: [
-      "–40 % de temps passé sur les tâches RH administratives",
-      "Adoption par 100 % des employés en moins de 2 semaines",
-      "0 incident de sécurité en 6 mois de production",
+      "Application web fonctionnelle avec authentification sécurisée",
+      "API REST complète avec CRUD et mises à jour temps réel",
+      "Localisation précise des chauffeurs avec Google Maps",
     ],
     learnings:
-      "J'aurais investi plus tôt dans une couche de cache Redis pour les requêtes de planning. Appris à poser plus de questions métier avant de coder.",
-    github: "https://github.com/alexandre-moreau/rh-platform",
+      "Importance de bien structurer l'API et les droits d'accès. La sécurité JWT est critique pour les applications sensibles.",
+    github: "https://github.com/SamSweYYY",
     demo: null,
   },
   {
     id: 2,
-    title: "API de recommandation e-commerce",
-    period: "2023 — 3 mois",
-    client: "Client e-commerce (10 000 produits)",
+    title: "Optimisation et nouvelles fonctionnalités Vue.js",
+    period: "05/2024 — 07/2024",
+    client: "SININKO - Stage à Paris",
     context:
-      "Le moteur de recherche interne donnait des résultats peu pertinents, entraînant un fort taux d'abandon. L'objectif était de personnaliser les recommandations produit.",
-    role: "Développeur backend — conception et développement de l'API de recommandation, intégration dans le front existant.",
-    stack: ["Node.js", "MongoDB", "Redis", "REST API", "Vue.js"],
+      "Contribution à des applications web existantes en Vue.js. Amélioration des performances, révision du code et ajout de nouvelles fonctionnalités pour renforcer la qualité.",
+    role: "Développeur Front-end — conception de nouvelles fonctionnalités, optimisation des composants Vue.js, amélioration des performances et maintenabilité.",
+    stack: ["Vue.js", "JavaScript", "Trello", "Jira"],
     challenges:
-      "Performances critiques : réponse < 200ms pour 5 000 requêtes/jour. Données produits mal structurées à nettoyer.",
+      "Optimiser le code Vue.js existant sans casser les fonctionnalités. Améliorer les performances et la maintenabilité des composants.",
     results: [
-      "+28 % de clics sur les recommandations",
-      "Temps de réponse API moyen : 120ms",
-      "+12 % de panier moyen sur les sessions avec recommandations",
+      "Nouvelles fonctionnalités implémentées et validées",
+      "Code Vue.js optimisé pour meilleures performances",
+      "Documentation technique rédigée pour réutilisation des composants",
     ],
     learnings:
-      "La qualité des données en entrée est aussi importante que l'algorithme. J'ai appris à automatiser la validation des données dès l'ingestion.",
-    github: "https://github.com/alexandre-moreau/reco-api",
-    demo: "https://demo.reco-api.dev",
-  },
-  {
-    id: 3,
-    title: "Dashboard analytics temps réel",
-    period: "2023 — 4 mois",
-    client: "Agence digitale (client retail)",
-    context:
-      "Les équipes marketing visualisaient leurs KPIs avec un export Excel hebdomadaire. Besoin d'un dashboard live pour piloter les campagnes au quotidien.",
-    role: "Fullstack — architecture WebSocket, développement Vue.js front, back Node.js, intégration de 3 sources de données tierces.",
-    stack: ["Vue.js 3", "Chart.js", "WebSocket", "Node.js", "PostgreSQL"],
-    challenges:
-      "Agréger des données provenant de Google Analytics, Meta Ads et Shopify en temps réel sans surcharger les APIs tierces.",
-    results: [
-      "Données actualisées toutes les 5 minutes (vs hebdomadaire)",
-      "–60 % de temps passé à préparer les rapports",
-      "Satisfaction client : 9/10 à la livraison",
-    ],
-    learnings:
-      "Mise en place d'un système de retry et de fallback pour les APIs tierces. Crucial en production, sous-estimé en phase de développement.",
+      "L'optimisation du code front est aussi importante que l'ajout de fonctionnalités. Bonne documentation = meilleure maintenabilité.",
     github: null,
     demo: null,
   },
   {
-    id: 4,
-    title: "Application mobile PWA — réseau associatif",
-    period: "2022 — 2 mois",
-    client: "Association culturelle (projet bénévole)",
+    id: 3,
+    title: "Clone Uber Eats",
+    period: "2023 — 2 mois",
+    client: "Projet personnel - Formation Web",
     context:
-      "Une association de 300 membres gérait ses événements par email. Objectif : une app légère, accessible sur mobile sans passer par les stores.",
-    role: "Développeur fullstack seul — conception, développement, déploiement.",
-    stack: ["Vue.js 3", "Firebase", "PWA", "Firestore"],
-    challenges: "Budget zéro, délai de 2 mois, accessibilité prioritaire (membres de 15 à 75 ans).",
+      "Reproduction du design et des fonctionnalités principales d'Uber Eats pour approfondir les compétences en frontend et comprendre l'architecture d'une vraie app.",
+    role: "Développeur Full Stack — conception du design, développement frontend et backend, intégration des données.",
+    stack: ["React", "HTML/CSS", "JavaScript", "API REST"],
+    challenges:
+      "Reproduire l'interface complexe d'Uber Eats, gérer les états et la navigation dynamique avec React.",
     results: [
-      "200 membres actifs le premier mois",
-      "Installée sur mobile par 65 % des membres",
-      "Coût d'hébergement : 0 € (Firebase Spark)",
+      "Interface fidèle à Uber Eats réalisée",
+      "Navigation fluide et responsive",
+      "Compréhension approfondie de la structure d'une app e-commerce",
     ],
     learnings:
-      "L'accessibilité n'est pas optionnelle. J'ai retravaillé l'interface 2 fois sur retour des utilisateurs seniors. Meilleure décision du projet.",
-    github: "https://github.com/alexandre-moreau/asso-pwa",
-    demo: "https://asso-events.web.app",
+      "Analyser une vraie app et en reproduire les mécanismes m'a beaucoup apporté. La complexité de React vaut l'apprentissage.",
+    github: "https://github.com/SamSweYYY",
+    demo: null,
+  },
+  {
+    id: 4,
+    title: "Jeu MasterMind en Python",
+    period: "2023 — 1 mois",
+    client: "Projet personnel - Formation",
+    context:
+      "Création du jeu classique MasterMind en Python. Objectif : maîtriser les bases de Python, les boucles, les conditions et la logique de jeu.",
+    role: "Développeur — conception complète du jeu, logique de détection des codes, interface console.",
+    stack: ["Python"],
+    challenges:
+      "Implémenter la logique correcte du jeu (détection des bonnes positions, mauvaises positions), gérer les tours du joueur.",
+    results: [
+      "Jeu fonctionnel et jouable",
+      "Interface console claire et ergonomique",
+      "Fondations solides en Python acquises",
+    ],
+    learnings:
+      "Les bases en Python sont simples à apprendre. Faire des jeux est un excellent moyen de pratiquer la logique.",
+    github: "https://github.com/SamSweYYY",
+    demo: null,
   },
 ]
 
 export const contact = {
-  title: "Travaillons ensemble",
-  subtitle: "Je suis disponible pour des missions freelance ou des opportunités en CDI. Répondez sous 24h.",
-  calendly: "https://calendly.com/alexandre-moreau",
+  title: "Parlons de votre projet",
+  subtitle: "Je suis disponible pour des stages, opportunités en CDI ou missions freelance. Je réponds sous 24h.",
+  calendly: "https://calendly.com/samuel-lalanne",
 }
  

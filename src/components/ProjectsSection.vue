@@ -1,23 +1,21 @@
 <template>
-  <section id="projects" class="py-5 bg-light">
-    <div class="container py-4">
+  <section id="projects" class="py-24 bg-gradient-to-b from-violet-800 via-black to-black">
+    <div class="max-w-6xl mx-auto px-6">
 
-      <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold">Projets</h2>
-        <div class="border-bottom border-success border-3 mx-auto mt-2 mb-3" style="width: 60px;"></div>
-        <p class="text-muted lead">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white">Projets</h2>
+        <div class="w-20 h-1 bg-violet-500 mx-auto mt-3 mb-6"></div>
+        <p class="text-gray-300 text-lg">
           Chaque projet est présenté comme un cas d'étude : contexte, rôle, défis techniques et résultats mesurables.
         </p>
       </div>
 
-      <div class="row g-4">
-        <div
+      <div class="grid md:grid-cols-2 gap-6">
+        <ProjectCard
           v-for="project in projects"
           :key="project.id"
-          class="col-lg-6"
-        >
-          <ProjectCard :project="project" />
-        </div>
+          :project="project"
+        />
       </div>
 
     </div>
