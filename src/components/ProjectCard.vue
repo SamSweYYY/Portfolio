@@ -2,7 +2,7 @@
   <div class="bg-black/40 border border-violet-500/30 rounded-xl p-6">
 
     <!-- Image Preview -->
-    <div class="mb-4">
+    <div v-if="project.image" class="mb-4">
       <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover rounded-lg" />
     </div>
 
@@ -52,5 +52,13 @@
 
 <script setup>
 import { reactive } from 'vue';
+
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true
+  }
+});
+
 const expanded = reactive({ context: false });
 </script>
