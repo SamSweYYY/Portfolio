@@ -10,54 +10,7 @@ export const profile = {
   available: true,
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- export const projects = [
+export const projects = [
   {
     id: 1,
     title: "Plateforme de gestion des chauffeurs VTC",
@@ -78,6 +31,7 @@ export const profile = {
       "Importance de bien structurer l'API et les droits d'accès. La sécurité JWT est critique pour les applications sensibles.",
     github: "https://github.com/SamSweYYY",
     demo: null,
+    image: "./assets/portfolio-preview.png",
   },
   {
     id: 2,
@@ -99,6 +53,7 @@ export const profile = {
       "L'optimisation du code front est aussi importante que l'ajout de fonctionnalités. Bonne documentation = meilleure maintenabilité.",
     github: null,
     demo: null,
+    image: "./assets/task-manager-preview.png",
   },
   {
     id: 3,
@@ -120,6 +75,7 @@ export const profile = {
       "Analyser une vraie app et en reproduire les mécanismes m'a beaucoup apporté. La complexité de React vaut l'apprentissage.",
     github: "https://github.com/SamSweYYY",
     demo: null,
+    image: "./assets/portfolio-preview.png",
   },
   {
     id: 4,
@@ -141,6 +97,31 @@ export const profile = {
       "Les bases en Python sont simples à apprendre. Faire des jeux est un excellent moyen de pratiquer la logique.",
     github: "https://github.com/SamSweYYY",
     demo: null,
+    image: "./assets/portfolio-preview.png",
+  },
+  {
+    id: 5,
+    title: "Portfolio",
+    period: "2026",
+    client: "Personnel",
+    stack: ["Vue.js", "Tailwind CSS", "Vite"],
+    context: "Création d'un portfolio personnel pour présenter mes compétences et projets.",
+    role: "Développeur Full Stack",
+    image: "./assets/portfolio-preview.png",
+    demo: "https://monportfolio.com",
+    github: "https://github.com/SamSweYYY/portfolio",
+  },
+  {
+    id: 6,
+    title: "Application de gestion de tâches",
+    period: "2025",
+    client: "Projet scolaire",
+    stack: ["React", "Node.js", "MongoDB"],
+    context: "Développement d'une application pour gérer les tâches quotidiennes.",
+    role: "Développeur Frontend",
+    image: "./assets/task-manager-preview.png",
+    demo: "https://taskmanager.com",
+    github: "https://github.com/SamSweYYY/task-manager",
   },
 ]
 
@@ -149,4 +130,3 @@ export const contact = {
   subtitle: "Je suis disponible pour des stages, opportunités en CDI ou missions freelance. Je réponds sous 24h.",
   calendly: "https://calendly.com/samuel-lalanne",
 }
- 

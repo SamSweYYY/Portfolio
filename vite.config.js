@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Portfolio/', // Chemin de base pour GitHub Pages
   plugins: [vue()],
   resolve: {
     alias: {

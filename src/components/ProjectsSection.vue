@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="py-24 bg-gradient-to-b from-violet-800 via-black to-black">
+  <section id="projects" class="py-24 bg-linear-to-b from-violet-800 via-black to-black">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="text-center mb-16">
@@ -23,6 +23,6 @@
 </template>
 
 <script setup>
-import { projects } from '../data/portfolio.js'
-import ProjectCard from './ProjectCard.vue'
+import { projects } from '../data/portfolio.js';
+import ProjectCard from './ProjectCard.vue';
 </script>
