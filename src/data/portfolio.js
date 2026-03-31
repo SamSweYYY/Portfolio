@@ -1,3 +1,7 @@
+import vtcImg from '../assets/vtc.png'
+import mangaImg from '../assets/manga.png'
+import promiseImg from '../assets/promise1.png'
+
 export const profile = {
   name: "Samuel LALANNE",
   title: "Développeur Full Stack",
@@ -31,73 +35,51 @@ export const projects = [
       "Importance de bien structurer l'API et les droits d'accès. La sécurité JWT est critique pour les applications sensibles.",
     github: "https://github.com/SamSweYYY",
     demo: null,
-    image: null,
+    image: vtcImg,
   },
   {
     id: 2,
-    title: "Optimisation et nouvelles fonctionnalités Vue.js",
+    title: "Promise — Site Vitrine d'Entreprise",
     period: "05/2024 — 07/2024",
     client: "SININKO - Stage à Paris",
     context:
-      "Contribution à des applications web existantes en Vue.js. Amélioration des performances, révision du code et ajout de nouvelles fonctionnalités pour renforcer la qualité.",
-    role: "Développeur Front-end — conception de nouvelles fonctionnalités, optimisation des composants Vue.js, amélioration des performances et maintenabilité.",
-    stack: ["Vue.js", "JavaScript", "Trello", "Jira"],
+      "Développement du site vitrine de l'entreprise SININKO durant mon stage. Création d'une interface moderne et responsive pour présenter les services et l'identité de la société.",
+    role: "Développeur Front-end — conception de l'interface utilisateur, intégration des maquettes, développement des pages et composants Vue.js, optimisation des performances.",
+    stack: ["Vue.js", "JavaScript", "Tailwind CSS", "Trello", "Jira"],
     challenges:
-      "Optimiser le code Vue.js existant sans casser les fonctionnalités. Améliorer les performances et la maintenabilité des composants.",
+      "Respecter la charte graphique de l'entreprise, assurer un design responsive sur tous les supports, optimiser le temps de chargement et le référencement.",
     results: [
-      "Nouvelles fonctionnalités implémentées et validées",
-      "Code Vue.js optimisé pour meilleures performances",
-      "Documentation technique rédigée pour réutilisation des composants",
+      "Site vitrine livré et mis en production",
+      "Interface responsive et fidèle aux maquettes",
+      "Performances optimisées et bonnes pratiques SEO appliquées",
     ],
     learnings:
-      "L'optimisation du code front est aussi importante que l'ajout de fonctionnalités. Bonne documentation = meilleure maintenabilité.",
+      "Travailler en entreprise m'a appris à respecter les délais, communiquer avec l'équipe et livrer un produit conforme aux attentes du client.",
     github: null,
     demo: null,
-    image: null,
+    image: promiseImg,
   },
   {
     id: 3,
-    title: "Clone Uber Eats",
+    title: "Manga Finder",
     period: "2023 — 2 mois",
     client: "Projet personnel - Formation Web",
     context:
-      "Reproduction du design et des fonctionnalités principales d'Uber Eats pour approfondir les compétences en frontend et comprendre l'architecture d'une vraie app.",
-    role: "Développeur Full Stack — conception du design, développement frontend et backend, intégration des données.",
+      "Création d'un site web dédié à l'univers manga permettant de parcourir un catalogue, consulter des fiches détaillées et filtrer par genre, auteur ou statut de publication.",
+    role: "Développeur Full Stack — conception UI/UX, développement frontend React, intégration d'une API manga externe, gestion des favoris utilisateur.",
     stack: ["React", "HTML/CSS", "JavaScript", "API REST"],
     challenges:
-      "Reproduire l'interface complexe d'Uber Eats, gérer les états et la navigation dynamique avec React.",
+      "Intégration d'une API externe pour récupérer les données manga, mise en place d'un système de recherche et filtrage dynamique, design responsive adapté au thème manga.",
     results: [
-      "Interface fidèle à Uber Eats réalisée",
-      "Navigation fluide et responsive",
-      "Compréhension approfondie de la structure d'une app e-commerce",
+      "Catalogue interactif avec recherche et filtres avancés",
+      "Fiches manga détaillées avec synopsis, genres et notation",
+      "Interface responsive au design immersif inspiré de l'univers manga",
     ],
     learnings:
-      "Analyser une vraie app et en reproduire les mécanismes m'a beaucoup apporté. La complexité de React vaut l'apprentissage.",
+      "Travailler avec des API externes demande une bonne gestion des erreurs et du loading. Le design thématique renforce l'engagement utilisateur.",
     github: "https://github.com/SamSweYYY",
     demo: null,
-    image: null,
-  },
-  {
-    id: 4,
-    title: "Jeu MasterMind en Python",
-    period: "2023 — 1 mois",
-    client: "Projet personnel - Formation",
-    context:
-      "Création du jeu classique MasterMind en Python. Objectif : maîtriser les bases de Python, les boucles, les conditions et la logique de jeu.",
-    role: "Développeur — conception complète du jeu, logique de détection des codes, interface console.",
-    stack: ["Python"],
-    challenges:
-      "Implémenter la logique correcte du jeu (détection des bonnes positions, mauvaises positions), gérer les tours du joueur.",
-    results: [
-      "Jeu fonctionnel et jouable",
-      "Interface console claire et ergonomique",
-      "Fondations solides en Python acquises",
-    ],
-    learnings:
-      "Les bases en Python sont simples à apprendre. Faire des jeux est un excellent moyen de pratiquer la logique.",
-    github: "https://github.com/SamSweYYY",
-    demo: null,
-    image: null,
+    image: mangaImg,
   },
 ]
 
