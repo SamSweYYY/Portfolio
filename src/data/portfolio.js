@@ -56,7 +56,7 @@ export const projects = [
     learnings:
       "Travailler en entreprise m'a appris à respecter les délais, communiquer avec l'équipe et livrer un produit conforme aux attentes du client.",
     github: null,
-    demo: null,
+    demo: "https://promiseguinee.com",
     image: promiseImg,
   },
   {
