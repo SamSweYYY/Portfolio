@@ -8,7 +8,7 @@
 - ✅ Meta keywords pertinents
 - ✅ Meta author
 - ✅ Meta robots (index, follow)
-- ✅ Canonical URL
+- ✅ Canonical URL (`https://samuellalanne.com`)
 - ✅ Theme color
 
 ### 2. **Open Graph & Social Media**
@@ -26,6 +26,7 @@
 ### 4. **Sitemap & Robots**
 - ✅ `robots.txt` créé avec sitemap reference
 - ✅ `sitemap.xml` avec toutes les pages principales
+- ✅ Domaine SEO aligné sur `https://samuellalanne.com`
 - ✅ Crawl delay configuré
 - ✅ Rules spécifiques pour Googlebot
 
@@ -44,6 +45,12 @@
 - ✅ Mobile-responsive garanti
 
 ## 📋 Recommandations supplémentaires
+
+### Domaine custom GitHub Pages
+1. **GitHub Pages**
+   - Configurer le domaine custom sur `samuellalanne.com`
+   - Vérifier que le DNS pointe bien vers GitHub Pages
+   - Le fichier `public/CNAME` publie automatiquement le domaine au build
 
 ### À faire après le déploiement :
 1. **Google Search Console**

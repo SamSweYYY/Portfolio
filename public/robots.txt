@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin
 Disallow: /private
 
-Sitemap: https://samuel-lalanne.dev/sitemap.xml
+Sitemap: https://samuellalanne.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
