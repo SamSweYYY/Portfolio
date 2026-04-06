@@ -34,7 +34,7 @@ export const projects = [
     learnings:
       "Importance de bien structurer l'API et les droits d'accès. La sécurité JWT est critique pour les applications sensibles.",
     github: "https://github.com/SamSweYYY",
-    demo: null,
+    demo: "https://samsweyyy.github.io/frontend-vtc-project/",
     image: vtcImg,
   },
   {
